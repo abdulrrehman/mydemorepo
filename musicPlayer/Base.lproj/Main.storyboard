@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ArialHB.ttc">
+            <string>ArialHebrew-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Genre View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="GenreViewController" customModule="musicPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="u02-lE-jQ0">
+                                <rect key="frame" x="87.5" y="183.5" width="200" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HmW-n3-7hx">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="0.81506849315068497" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="7Qb-wA-JyS"/>
+                                            <constraint firstAttribute="width" constant="200" id="vSP-xT-aHf"/>
+                                        </constraints>
+                                        <state key="normal" title="Favorite Music">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="musicButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jJN-5b-U0J"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGk-lW-2AX">
+                                        <rect key="frame" x="0.0" y="80" width="200" height="40"/>
+                                        <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="5e7-MT-gYS"/>
+                                            <constraint firstAttribute="height" constant="40" id="Tu2-yZ-2pJ"/>
+                                        </constraints>
+                                        <state key="normal" title="Gym Songs">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="musicButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j2t-BA-0df"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ekH-om-Jyl">
+                                        <rect key="frame" x="0.0" y="160" width="200" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.24506561739999999" blue="0.39087705540000001" alpha="0.86301369859999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="H13-fh-B8Y"/>
+                                            <constraint firstAttribute="height" constant="40" id="dys-5E-vVd"/>
+                                        </constraints>
+                                        <state key="normal" title="Road Trip Songs">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="musicButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j7S-Rl-tml"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="UyX-iU-eQL"/>
+                                    <constraint firstAttribute="width" constant="200" id="VjC-kp-CCo"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6D-Ej-ycP">
+                                <rect key="frame" x="87" y="427" width="100" height="40"/>
+                                <color key="backgroundColor" red="0.75288265939999999" green="0.7529741526" blue="0.75285154580000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="kmj-7N-R5K"/>
+                                    <constraint firstAttribute="height" constant="40" id="sZt-sF-2ED"/>
+                                    <constraint firstAttribute="width" constant="100" id="vfz-X5-sOb"/>
+                                </constraints>
+                                <state key="normal" title="Stop">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QVA-lx-hZi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awt-Fv-dts">
+                                <rect key="frame" x="187" y="427" width="100" height="40"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="A8H-2w-gkj"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="BTz-vF-26R"/>
+                                    <constraint firstAttribute="height" constant="40" id="oDA-sM-t5Z"/>
+                                </constraints>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NGf-0v-Ht7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MUSIC PLAYER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NaZ-06-osU">
+                                <rect key="frame" x="91" y="44" width="193" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="awt-Fv-dts" firstAttribute="trailing" secondItem="u02-lE-jQ0" secondAttribute="trailing" id="3Af-ZG-6t3"/>
+                            <constraint firstItem="r6D-Ej-ycP" firstAttribute="top" secondItem="u02-lE-jQ0" secondAttribute="bottom" constant="43.5" id="O7B-Uf-vCB"/>
+                            <constraint firstItem="r6D-Ej-ycP" firstAttribute="leading" secondItem="u02-lE-jQ0" secondAttribute="leading" id="XDt-AA-xkD"/>
+                            <constraint firstItem="u02-lE-jQ0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cy9-Sc-R8B"/>
+                            <constraint firstItem="awt-Fv-dts" firstAttribute="top" secondItem="u02-lE-jQ0" secondAttribute="bottom" constant="43.5" id="htK-jk-XAN"/>
+                            <constraint firstItem="u02-lE-jQ0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="xIp-U5-61C"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="nextButtonTapped" destination="awt-Fv-dts" id="CQC-3n-jrV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="93.103448275862078"/>
+        </scene>
+    </scenes>
+</document>
